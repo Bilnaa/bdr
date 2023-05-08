@@ -40,9 +40,9 @@
             </div>
             <h2 class="text-center text-3xl font-bold tracking-tight text-gray-900">Bonjour <?php echo $nom.' '.$prenom?></h2> 
             <p class="mt-2 text-center text-sm text-gray-600">
-              <span class="font-medium text-gray-900">Vous devez changer votre mot de passe pour continuer</span>
+              <span class="font-medium text-gray-900">Vous voulez changer de mot de passe </span>
             </p>
-            <form class="mt-8 space-y-6" action="/libs/firstConnexion.php" method="POST">
+            <form class="mt-8 space-y-6" action="/libs/reset.php" method="POST">
               <input type="hidden" name="login" value="true">
               <div class="inputs -space-y-px">
                 <div class="login mb-2">
