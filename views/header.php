@@ -11,9 +11,8 @@
          <link rel="apple-touch-icon" sizes="180x180" href="public/img/logo_boi_du_roy.png">
          <link rel="icon" type="image/png" sizes="32x32" href="public/img/logo_boi_du_roy.png">
          <link rel="stylesheet" href="public/css/main.css">
-         <script src="https://unpkg.com/heroicons@1.0.5"></script>
+         <script src="/public/js/main.js"></script>
          <script src="https://cdn.tailwindcss.com"></script>
      </head>
      <body>';
-     
 ?>
