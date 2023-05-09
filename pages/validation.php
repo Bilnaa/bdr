@@ -119,6 +119,18 @@ $demandes = $stmt->fetchAll(PDO::FETCH_ASSOC);
         input.type = 'hidden';
         input.name = 'validation';
         input.value = yesOrNo;
+        if(input.value == 'no'){
+            // prompt message with the reason of the refusal
+            let message = prompt('Veuillez entrer le motif du refus :');
+            if(message == null){
+                return;
+            }
+            // create input with name messagerefus
+            let input2 = document.createElement('input');
+            input2.type = 'hidden';
+            input2.name = 'messagerefus';
+            input.value = message;
+        }
         form.appendChild(input);
         form.submit();
     }
