@@ -22,9 +22,6 @@ class Database {
         }
         return $pdo;
     }
-
-    
-
 }
 
 ?>
