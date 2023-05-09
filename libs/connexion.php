@@ -25,10 +25,10 @@ if (isset($_POST['matricule']) && isset($_POST['password']) && !empty($_POST['ma
             $changed_password = $user['DDERNIERECOEMPLOYE'];
             if($changed_password == null){
                 echo "You connected succesfully but you have to change your password !";
-                #header('Location: '.$URL.'login/premiereConnexion.php');
+                header('Location: '.$URL.'login/premiereConnexion.php');
             } else {
                 echo "You have already changed your password !";
-                #header('Location: '.$URL.'dashboard');
+                header('Location: '.$URL.'dashboard');
             }
         } else {
             echo "The password is incorrect !";
