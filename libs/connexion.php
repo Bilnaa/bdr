@@ -5,7 +5,7 @@ require_once ("../utils/integrity.php");
 
 $URL = "/";
 if (isset($_POST['matricule']) && isset($_POST['password']) && !empty($_POST['matricule']) && !empty($_POST['password']) ){
-    $_SESSION['matricule'] = $_POST['matricule'];
+
     $username = $_POST['matricule'];
     $password = $_POST['password'];
     $db = new Database();
@@ -16,6 +16,7 @@ if (isset($_POST['matricule']) && isset($_POST['password']) && !empty($_POST['ma
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     if($result){
+        $_SESSION['matricule'] = $_POST['matricule'];
         $user = $result;
         $integrity = new Integrity();
         $hashed_password = $result['PASSWORDEMPLOYE'];
